@@ -1,2 +1,2 @@
-# Tattoo-site
+# Tattoo-site developed with scss...
  https://yash1404.github.io/Tattoo-site/
