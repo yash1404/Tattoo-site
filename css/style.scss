@@ -1,0 +1,384 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  font-size:10px;
+  scroll-behavior: smooth;
+}
+$myheadfontfamily:"'Dancing Script', cursive;";
+$myparafontfamily:"'Open Sans', sans-serif;";
+
+// header section
+#navandbanner{
+  height:100vh;
+  width:100%;
+  background-color:#212121;
+}
+@import"nav";
+ 
+//banner section
+.info{
+  position:relative;
+  top:35%;
+  h1{
+    color:white;
+    font-size:6rem;
+    font-family:$myheadfontfamily;
+
+  }
+  p{
+    color:white;
+    font-size:2rem;
+    font-family:$myparafontfamily;
+    text-align:justify;
+    word-spacing:-2px;
+    margin-top:10px;
+
+  }
+  button{
+    background-color:#0D7377;
+    border:none;
+  padding:10px 30px;
+  color:white;
+  font-size:2rem;
+  margin-top:20px;
+border-radius:8px;
+
+&:hover{
+  background-color:#064547;
+}
+  }
+  
+}
+.img{
+  margin-top:50px;
+  width:100%;
+
+  img{
+    width:85%;
+  }
+}
+@media only screen and (max-width:576px){
+  .info{
+    position:relative;
+    top:10%;
+    h1{
+      font-size:4rem;
+    }
+    p{
+      font-size:1.5rem;
+      word-spacing:-2px;
+    }
+    
+  }
+  .img{
+    margin-top:50px;
+    width:100%;
+    text-align:center;
+  
+    img{
+      width:70%;
+    }
+  }
+}
+@media only screen and (max-width:375px){
+  .img{
+    margin-top:40px;
+    margin-right:20px;
+    width:100%;
+    text-align:center;
+  
+    img{
+      width:90%;
+    }
+  }
+}
+@media only screen and (max-width:325px){
+  .img{
+    margin-top:40px;
+    margin-right:20px;
+    width:100%;
+  
+    img{
+      width:70%;
+    }
+  }
+}
+//what we do section
+#Our{
+margin-top:50px;
+}
+.ourhead{
+h1{
+  text-align:center;
+  font-family:$myheadfontfamily;
+  font-size:5rem;
+}
+}
+.threemain{
+  width:100%;
+  margin-top:20px;
+  text-align:center;
+  img{
+    height:100px;
+    width:100px;
+    background-color:#0D7377;
+    padding:20px;
+    border-radius:10px;
+  }
+  h1{
+    font-family:$myheadfontfamily;
+    font-size:3rem;
+    margin-top:10px;
+
+  }
+  p{
+    font-size:1.5rem;
+    margin-top:10px;  
+  }
+}
+// about us section
+#About{
+  margin-top:50px;
+
+}
+.pic{
+  margin-top:20px;
+  width:100%;
+  img{
+    width:90%;
+  }
+}
+.aboutinfo{
+  margin-top:150px;
+  h1{
+    font-family:$myheadfontfamily;
+    font-size:4rem;
+
+  }
+  p{
+    font-family:$myparafontfamily;
+    font-size:2rem;
+    text-align:justify;
+    line-height:22px;
+    margin-top:20px;
+    word-spacing:-1px;
+
+  }
+  button{
+    background-color:#0D7377;
+    border:none;
+  padding:10px 30px;
+  color:white;
+  font-size:2rem;
+  margin-top:20px;
+border-radius:8px;
+&:hover{
+  background-color:#064547;
+}
+  }
+}
+ @media only screen and (max-width:500px){
+  .aboutinfo{
+    margin-top:80px;}
+    img{
+      width:100%;
+    }
+ }
+ //gallery section starts here
+#Gallery{
+  margin-top:100px;
+
+ h2{
+  text-align:center;
+  font-family:$myheadfontfamily;
+  margin-bottom:30px;
+  font-size:4rem;
+}
+}
+.owl-carousel .item img{
+height:400px;
+width:100%;
+border:5px solid #0D7377;
+transition:all 0.8s ease-in-out;
+&:hover{
+  transform:scale(1.2);
+}
+}
+.owl-nav button span{
+font-size:50px;
+background-color:#0D7377;
+margin-top:20px;
+padding:0px 20px 0px;
+
+}
+//clients section
+#client{
+  margin-top:50px;
+  h2{
+    text-align:center;
+    font-family:$myheadfontfamily;
+    font-size:4rem;
+  }
+}
+.clientpara{
+  background-color:#212121;
+
+}
+.clientpara p{
+  font-size:2rem;
+  word-spacing:-1px;
+  font-family:$myparafontfamily;
+  text-align:justify;
+  color:white;
+  margin-top:20px;
+  padding:10px;
+}
+.clientimg{
+  display:flex;
+  align-items:center;
+  margin-top:20px;
+  img{
+    height:100px;
+    width:100px;
+    border:4px solid #0D7377;
+  }
+  h1{
+    font-family:$myparafontfamily;
+    margin-left:20px;
+    text-shadow:2px 2px gray;
+    font-size:2rem;
+  }
+}
+//contact
+
+.contact{
+  margin-top:50px;
+  background-color:#212121;
+  width:100%;
+  padding:10px 0px;
+}
+
+.inputfield,.linking{
+  margin-top:50px;
+}
+.inputfield input{
+  width:80%;
+  height:50px;
+  border:2px solid #0D7377;
+}
+.inputfield button{
+  width:10%;
+  margin:0px;
+  height:50px;
+  background-color:#0D7377;
+
+}
+.inputfield button span{
+  color:white;
+}
+.linking span{
+  border:2px solid #0D7377;
+  padding:10px;
+  font-size:2rem;
+  color:white;
+  margin-left:10px;
+
+}
+@media only screen and (max-width:576px){
+  .linking{
+    padding:0px;
+    margin-top:20px;
+  }
+  .linking span{
+    width:20%;
+    text-align:center;
+  }
+}
+.maining{
+  margin-top:50px;
+}
+@mixin samehead{
+  font-family:$myheadfontfamily;
+  font-size:4rem;
+  color:white;
+}
+.abouting {
+  h2{
+  @include samehead;
+}
+p{
+  font-size:2rem;
+  color:white;
+}
+}
+.instagram{
+  margin-left:35px;
+  h2{
+@include samehead;
+
+  }
+}
+.insta{
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  img{
+    width:100px;
+    height:100px;
+    margin-top:20px;
+  }
+  p{
+font-size:1.5rem;
+color:white;
+margin-left:10px;
+  }
+}
+.contacting{
+  h2{
+    @include samehead;
+  }
+}
+.spaning{
+  display:flex;
+ flex-direction:column ;
+ span{
+   color:white;
+   font-size:2rem;
+   margin-top:10px;
+ }
+}
+@media only screen and (max-width:576px){
+  .callus{
+    text-align:center;
+  }
+  .contacting,.instagram {
+    h2{
+    margin-top:20px;
+  }
+  
+}
+}
+//footer section
+
+.footering{
+  background-color:#0D7377;
+  height:8vh;
+  width:100%;
+
+
+}
+.footer{
+ 
+  p{
+    text-align:center;
+    color:white;
+    font-size:1.5rem;
+    padding:15px 0 0 0;
+    text-transform:capitalize;
+  }
+}
+

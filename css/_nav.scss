@@ -1,0 +1,84 @@
+
+.head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center; 
+  padding:50px 50px 5px 50px;
+
+}
+$myheadfontfamily:'Dancing Script', cursive;
+$myparafontfamily:'Open Sans', sans-serif;
+
+.logo h1{
+  font-family:$myheadfontfamily;
+font-size:3rem;
+font-weight:500;
+color:white;
+}
+.menulist{
+ display:flex;
+ z-index:1000;
+
+ 
+ li{
+   list-style:none;
+   margin-right:25px;
+   transition:all 0.5s ease-out;
+   .active{
+     background-color:#0D7377;
+    padding:6px;
+    border-radius:8px;
+   }
+   &:hover{
+    background-color:#0D7377;
+    padding:6px;
+    border-radius:8px;
+   }
+
+   span{
+     color:white;
+     font-size:2rem;
+   }
+ }
+
+ a{
+   color:white;
+   text-decoration:none;
+   font-size:2rem;
+   font-family:'Open Sans', sans-serif;
+
+ }
+
+}
+.menu{
+  display:none;
+}
+@media only screen and (max-width:768px){
+  .head{
+  
+    padding-right:50px;
+    padding-top:30px;
+  }
+  .menulist{
+    position:absolute;
+    right:20px;
+    top:12%;
+    display:block;
+    background-color:#449396;
+    padding:50px 50px;
+    display:none;
+    
+  }
+  .menulist li{
+    margin-top:10px;
+  }
+  .menu{
+    display:block;
+    color:white;
+    font-size:2rem;
+  }
+  .fa-align-right{
+    margin-left:10px;
+  }
+  
+}

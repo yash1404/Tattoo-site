@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+#navandbanner {
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 50px 5px 50px;
+}
+
+.logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.menulist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+}
+
+.menulist li {
+  list-style: none;
+  margin-right: 25px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menulist li .active {
+  background-color: #0D7377;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.menulist li:hover {
+  background-color: #0D7377;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.menulist li span {
+  color: white;
+  font-size: 2rem;
+}
+
+.menulist a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .head {
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+  .menulist {
+    position: absolute;
+    right: 20px;
+    top: 12%;
+    display: block;
+    background-color: #449396;
+    padding: 50px 50px;
+    display: none;
+  }
+  .menulist li {
+    margin-top: 10px;
+  }
+  .menu {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
+  .fa-align-right {
+    margin-left: 10px;
+  }
+}
+
+.info {
+  position: relative;
+  top: 35%;
+}
+
+.info h1 {
+  color: white;
+  font-size: 6rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.info p {
+  color: white;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  word-spacing: -2px;
+  margin-top: 10px;
+}
+
+.info button {
+  background-color: #0D7377;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.info button:hover {
+  background-color: #064547;
+}
+
+.img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.img img {
+  width: 85%;
+}
+
+@media only screen and (max-width: 576px) {
+  .info {
+    position: relative;
+    top: 10%;
+  }
+  .info h1 {
+    font-size: 4rem;
+  }
+  .info p {
+    font-size: 1.5rem;
+    word-spacing: -2px;
+  }
+  .img {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .img img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .img {
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .img {
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 100%;
+  }
+  .img img {
+    width: 70%;
+  }
+}
+
+#Our {
+  margin-top: 50px;
+}
+
+.ourhead h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+}
+
+.threemain {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.threemain img {
+  height: 100px;
+  width: 100px;
+  background-color: #0D7377;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.threemain h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.threemain p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+#About {
+  margin-top: 50px;
+}
+
+.pic {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.pic img {
+  width: 90%;
+}
+
+.aboutinfo {
+  margin-top: 150px;
+}
+
+.aboutinfo h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+
+.aboutinfo p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 22px;
+  margin-top: 20px;
+  word-spacing: -1px;
+}
+
+.aboutinfo button {
+  background-color: #0D7377;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-size: 2rem;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.aboutinfo button:hover {
+  background-color: #064547;
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutinfo {
+    margin-top: 80px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#Gallery {
+  margin-top: 100px;
+}
+
+#Gallery h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 30px;
+  font-size: 4rem;
+}
+
+.owl-carousel .item img {
+  height: 400px;
+  width: 100%;
+  border: 5px solid #0D7377;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.owl-carousel .item img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.owl-nav button span {
+  font-size: 50px;
+  background-color: #0D7377;
+  margin-top: 20px;
+  padding: 0px 20px 0px;
+}
+
+#client {
+  margin-top: 50px;
+}
+
+#client h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+
+.clientpara {
+  background-color: #212121;
+}
+
+.clientpara p {
+  font-size: 2rem;
+  word-spacing: -1px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.clientimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.clientimg img {
+  height: 100px;
+  width: 100px;
+  border: 4px solid #0D7377;
+}
+
+.clientimg h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+  text-shadow: 2px 2px gray;
+  font-size: 2rem;
+}
+
+.contact {
+  margin-top: 50px;
+  background-color: #212121;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.inputfield, .linking {
+  margin-top: 50px;
+}
+
+.inputfield input {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #0D7377;
+}
+
+.inputfield button {
+  width: 10%;
+  margin: 0px;
+  height: 50px;
+  background-color: #0D7377;
+}
+
+.inputfield button span {
+  color: white;
+}
+
+.linking span {
+  border: 2px solid #0D7377;
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .linking {
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .linking span {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+.maining {
+  margin-top: 50px;
+}
+
+.abouting h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+.abouting p {
+  font-size: 2rem;
+  color: white;
+}
+
+.instagram {
+  margin-left: 35px;
+}
+
+.instagram h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+.insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.insta p {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10px;
+}
+
+.contacting h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+.spaning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.spaning span {
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .callus {
+    text-align: center;
+  }
+  .contacting h2, .instagram h2 {
+    margin-top: 20px;
+  }
+}
+
+.footering {
+  background-color: #0D7377;
+  height: 8vh;
+  width: 100%;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 0 0 0;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=style.css.map */
